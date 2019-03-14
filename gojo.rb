@@ -1,13 +1,13 @@
 class Gojo < Formula
   homepage 'https://github.com/itchyny/gojo'
-  version '0.0.2'
+  version '0.0.3'
 
   if Hardware::CPU.is_64_bit?
-    url 'https://github.com/itchyny/gojo/releases/download/v0.0.2/gojo_darwin_amd64.zip'
-    sha256 '3f74ae39de5c0ae039e6dba35ab3f5f6165b96ed5dd5dee349380b57a75f1804'
+    url 'https://github.com/itchyny/gojo/releases/download/v0.0.3/gojo_darwin_amd64.zip'
+    sha256 '402e604b660839f3234af62f4ac0423c7efeb220d2badd359fd7064c5e852bb4'
   else
-    url 'https://github.com/itchyny/gojo/releases/download/v0.0.2/gojo_darwin_386.zip'
-    sha256 '5d1f86c750ad172dc0dc780f772431479b81e68fb1821d99b51c1712a8665035'
+    url 'https://github.com/itchyny/gojo/releases/download/v0.0.3/gojo_darwin_386.zip'
+    sha256 'd05f27a273034bd285dbe9957666b5fcefcfcffad69305d468f7fb11327ff84f'
   end
 
   head do
