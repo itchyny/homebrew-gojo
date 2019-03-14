@@ -1,13 +1,13 @@
 class Gojo < Formula
   homepage 'https://github.com/itchyny/gojo'
-  version '0.0.0'
+  version '0.0.1'
 
   if Hardware::CPU.is_64_bit?
-    url 'https://github.com/itchyny/gojo/releases/download/v0.0.0/gojo_darwin_amd64.zip'
-    sha256 '2d07f1699d5d16169c49bc6339397b89062f00030f49ea1c4361d1bf935f086e'
+    url 'https://github.com/itchyny/gojo/releases/download/v0.0.1/gojo_darwin_amd64.zip'
+    sha256 '6f78dc62aeb6a3597ce98c2039e0e3bcd9504b777b11ac73513a115d899b6121'
   else
-    url 'https://github.com/itchyny/gojo/releases/download/v0.0.0/gojo_darwin_386.zip'
-    sha256 '7152f8ae436e3a394b4d1f1efab3b4599ae0cc59b7b295cbcf95399a134f37fc'
+    url 'https://github.com/itchyny/gojo/releases/download/v0.0.1/gojo_darwin_386.zip'
+    sha256 '03808c8ad19e0b027eb4763a363505ea4dc9c16d275b5e82f38927bd2936114d'
   end
 
   head do
@@ -30,6 +30,6 @@ class Gojo < Formula
   end
 
   test do
-    system 'gojo', '--version'
+    system 'gojo', '-v'
   end
 end
